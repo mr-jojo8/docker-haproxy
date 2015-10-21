@@ -4,7 +4,7 @@ ENV HAPROXY_VERSION=1.5.14
 
 RUN \
   set -x && \
-  apt-get update && apt-get install -y wget tar gzip make gcc libc6-dev libpcre3-dev libssl-dev && \
+  apt-get update && apt-get install -y inotify-tools wget tar gzip make gcc libc6-dev libpcre3-dev libssl-dev && \
   wget -O /tmp/haproxy.tgz http://www.haproxy.org/download/1.5/src/haproxy-${HAPROXY_VERSION}.tar.gz && \
   mkdir -p /usr/local/haproxy && \
   tar -zxvf /tmp/haproxy.tgz -C /usr/local/haproxy/ --strip-components 1 && \
