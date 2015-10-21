@@ -30,7 +30,7 @@ ADD container-files /
 ENV HAPROXY_CONFIG /etc/haproxy/haproxy.cfg
 
 #ADD bootstrap.sh /bootstrap.sh 
-#RUN chmod +x /*.sh
+RUN chmod +x /*.sh
 
 EXPOSE 80 443 1936
 
