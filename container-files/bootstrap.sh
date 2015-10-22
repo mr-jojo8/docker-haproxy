@@ -17,11 +17,11 @@ HAPROXY_CHECK_CONFIG_CMD="/usr/local/sbin/haproxy -f ${HAPROXY_CONFIG} -c"
 # Arguments:
 #   String: value to log
 #######################################
-log() {
-  if [ "$@" ]; then 
-	echo "[`date +'%Y-%m-%d %T'`] $@";
-  else echo; fi
-}
+#log() {
+#  if [ "$@" ]; then 
+#	echo "[`date +'%Y-%m-%d %T'`] $@";
+#  else echo; fi
+#}
 
 #######################################
 # Dump current $HAPROXY_CONFIG
