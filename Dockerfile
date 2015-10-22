@@ -34,4 +34,4 @@ RUN chmod +x /*.sh
 
 EXPOSE 80 443 1936
 
-CMD ["/bootstrap.sh"]
+CMD ["./bootstrap.sh"]
