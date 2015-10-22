@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-set -u
+set -e
 
 # User params
 HAPROXY_CONFIG=${HAPROXY_CONFIG:="/etc/haproxy/haproxy.cfg"}
